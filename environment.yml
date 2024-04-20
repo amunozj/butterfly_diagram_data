@@ -1,0 +1,23 @@
+name: bfly400data
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - scipy
+  - astropy
+  - numpy
+  - pandas
+  - tqdm
+  - hdbscan
+  - seaborn
+  - colorcet
+  - lmfit
+  - xlrd
+  - scikit-learn
+  - matplotlib
+  - openpyxl
+  - black
+  - ipykernel
+  - ipywidgets
+  - pip
+
