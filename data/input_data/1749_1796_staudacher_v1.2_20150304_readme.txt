@@ -1,0 +1,29 @@
+
+Data format of staudacher_v1.2_20150304_groupnames.txt
+------------------------------------------------------
+
+YYYY    - Year
+MM      - Month
+DD      - Day (Gregorian)
+HH      - Hour (UT)
+MI      - Minute (always =00, only for compatibility with other data)
+T       - Time flag (0 - inferred to be noon, 1 - exact time given)
+L0      - Carrington longitude of disk center
+B0      - Latitude of disk center
+CMD     - Central meridian distance of spot
+LLL.L   - Carrington longitude of spot
+BBB.B   - Latitude of spot
+M       - Method (almost always = Q, no real meaning, mostly rotational match with
+          other days; E = ecliptic used, highly uncertain, T - time of day used
+          to assume horizon as a horizontal in the drawing;
+          '-' means spotless day, then BBB.B = 99.9)
+Q       - Subjective quality (1 - good, 2 - mediocre, 3 - bad, 4 - better don't use)
+GRP     - Group name for given day; NOT the same name for the same group on consecutive days
+Remarks - Comment on way of determining the solar equator
+          HAMILTON - This observation was derived from notes of Armagh observatory and added
+          in the Staudacher file.
+
+Note: Sometimes two sets of spots for one day are given, because two methods to
+      estimate the solar equator were tried. Choose the one with better Q.
+
+
