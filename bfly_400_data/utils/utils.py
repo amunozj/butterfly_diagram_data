@@ -16,10 +16,10 @@ def calculate_observed_fraction(Bfly, Y1 = 1600, Y2 = 2025, YrCum = 1, slss_ds=N
     vordinal2fracy = np.vectorize(ordinal2fracy)
 
     # Calculate a unique list of days represented in the butterfly diagram
-    ObsDsBfly = np.unique(Bfly["ORDINAL"])
+    ObsDsBfly = np.unique(Bfly["Ordinal"])
 
     if slss_ds is not None:
-        ObsDsBfly = np.concatenate([ObsDsBfly, np.unique(slss_ds['ORDINAL'])])
+        ObsDsBfly = np.concatenate([ObsDsBfly, np.unique(slss_ds['Ordinal'])])
 
     # Calculate the corresponding fractional year
     BfObsFy = vordinal2fracy(ObsDsBfly)
